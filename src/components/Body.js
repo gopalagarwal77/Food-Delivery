@@ -20,7 +20,7 @@ const Body = ()=>{
         // handle the error using try catch 
         try{
         const response = await fetch(
-            "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.999831&lng=77.702112&restaurantId=841218&catalog_qa=undefined&submitAction=ENTER"
+          "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
             );
         const json = await response.json();
          // initialize checkJsonData() function to check Swiggy Restaurant data
