@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import { createBrowserRouter , RouterProvider , Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
+import { createRoot } from 'react-dom/client';
+
 /*const styleCard = {
     backgroundColor:"#f0f0f0"
 };*/
@@ -46,5 +48,5 @@ const appRouter = createBrowserRouter([
     },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter} />);
